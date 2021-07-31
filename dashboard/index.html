@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<!--fontawesome-->
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="icon" type="image/png" href="Productnest.png"/>
+        <title>DashBoard/ Product nest</title>
+    </head>
+     
+		<body id="body-pd">	
+       <header class="header" id="header">
+    <div class="header__toggle">
+<i class='bx bx-menu' id="header-toggle"></i>
+				<!-- Topbar Search -->
+<div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">Search Admin Pages</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="index.html"><font size="2">DashBoard</font></a>
+    <a href="Product.html"><font size="2">Product</font></a>
+    <a href="addproduct.html"><font size="2">Add product</font></a>
+	    <a href="mailbox.html"><font size="2">Inbox</font></a>
+    <a href="resetpass.html"><font size="2">Change password</font></a>
+
+  </div>
+</div>
+            </div>
+            <!-- Nav Item - User Information -->
+            <li>
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin DashBoard</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class='bx bx-layer nav__logo-icon'></i>
+                        <span class="nav__logo-name">Product Nest</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="index.html" class="nav__link active">
+                        <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+
+                        <a href="Product.html" class="nav__link">
+                            <i class='bx bxs-cart nav__icon' ></i>
+                            <span class="nav__name">Product</span>
+                        </a>
+                        
+                        <a href="addproduct.html" class="nav__link">
+                            
+							<i class='bx bxs-cart-add nav__icon'></i>
+                            <span class="nav__name">Add Product</span>
+                        </a>
+
+                        <a href="mailbox.html" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon' ></i>
+                            <span class="nav__name">Inbox</span>
+                        </a>
+
+                        <a href="resetpass.html" class="nav__link">
+                           <i class='bx bx-refresh nav__icon'></i>
+                            <span class="nav__name">Change Password</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+          <br><br><br><br>
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+  <!-- Page Heading -->
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+  </div>
+
+  <!-- Content Row -->
+  <div class="row">
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Registered Logins</div>
+              <div class="h5 mb-0 font-weight-bold text-gray-800">
+
+               <h4>Total Login: *</h4>
+
+              </div>
+            </div>
+            <div class="col-auto">
+              <i class="fas fa-calendar fa-2x text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-success shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Total Products</div><br>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><h2>25</h2></div>
+            </div>
+            <div class="col-auto">
+             <i class='bx bxs-cart  fa-2x text-gray-300'></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-info shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total Reviews</div><br>
+              <div class="row no-gutters align-items-center">
+                <div class="col-auto">
+                  <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><h2>50%</h2></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <i class='bx bxs-star fa-2x text-gray-300'></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pending Requests Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-warning shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total Messages</div><br>
+              <div class="h5 mb-0 font-weight-bold text-gray-800"><h2>18</h2></div>
+            </div>
+            <div class="col-auto">
+              <i class="fas fa-comments fa-2x text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Row -->
+<div class="card">
+                            <div class="card-body">
+                                <!-- title -->
+                                <div class="d-md-flex align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Active Dashboard</h4>
+                                    </div>
+                                </div>
+                                <!-- title -->
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table v-middle">
+                                    <thead>
+                                        <tr class="bg-light">
+                                            <th class="border-top-0">User Name</th>
+                                            <th class="border-top-0">Email</th>
+                                            <th class="border-top-0">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><i class='bx bxs-user'></i></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td><span class="dot">
+											<i class="bg-success"></i>
+											Online
+										</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+     
+                    <!-- column -->
+                    <div class="col-md-12 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- title -->
+                                <div class="d-md-flex align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Top Selling Products</h4>
+                                        <h5 class="card-subtitle">Overview of Top Selling Items</h5>
+                                    </div>
+                                </div>
+                                <!-- title -->
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table v-middle">
+                                    <thead>
+                                        <tr class="bg-light">
+                                            <th class="border-top-0">Products</th>
+                                            <th class="border-top-0">License</th>
+                                            <th class="border-top-0">Support Agent</th>
+                                            <th class="border-top-0">Technology</th>
+                                            <th class="border-top-0">Tickets</th>
+                                            <th class="border-top-0">Sales</th>
+                                            <th class="border-top-0">Earnings</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><img src="assets/img/h.jpg" height="40px" width="40px"></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <label class="label label-danger">Angular</label>
+                                            </td>
+                                            <td>46</td>
+                                            <td>356</td>
+                                            <td>
+                                                <h5 class="m-b-0">$2850.06</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><img src="assets/img/h1.jpg" height="40px" width="40px"></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>Venessa Fern</td>
+                                            <td>
+                                                <label class="label label-info">Vue Js</label>
+                                            </td>
+                                            <td>46</td>
+                                            <td>356</td>
+                                            <td>
+                                                <h5 class="m-b-0">$2850.06</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><img src="assets/img/h.png" height="40px" width="40px"></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <label class="label label-success">Bootstrap</label>
+                                            </td>
+                                            <td>46</td>
+                                            <td>356</td>
+                                            <td>
+                                                <h5 class="m-b-0">$2850.06</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><img src="assets/img/m.jpg" height="40px" width="40px"></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Samsung M51</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <label class="label label-purple">React</label>
+                                            </td>
+                                            <td>46</td>
+                                            <td>356</td>
+                                            <td>
+                                                <h5 class="m-b-0">$2850.06</h5>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                   
+<div class="col-md-12 mt-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- title -->
+                                <div class="d-md-flex align-items-center">
+                                    <div>
+                                        <h4 class="card-title">Registered</h4>
+                                        <h5 class="card-subtitle">Users</h5>
+                                    </div>
+                                </div>
+                                <!-- title -->
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table v-middle">
+                                    <thead>
+                                        <tr class="bg-light">
+                                            <th class="border-top-0">User Name</th>
+                                            <th class="border-top-0">Email</th>
+                                            <th class="border-top-0">ID</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><i class='bx bxs-user'></i></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><i class='bx bxs-user'></i></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><i class='bx bxs-user'></i></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>33</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><i class='bx bxs-user'></i></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Samsung M51</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+					<!-- Review-->
+					 <div class="table-responsive">
+                                <table class="table v-middle">
+                                    <thead>
+                                        <tr class="bg-light">
+                                            <th class="border-top-0">Image</th>
+                                            <th class="border-top-0">Product Name</th>
+                                            <th class="border-top-0">User Name</th>
+                                            <th class="border-top-0">Product Type</th>
+                                            <th class="border-top-0">Reviews</th>
+                                            <th class="border-top-0">Stars</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><img src="assets/img/h.jpg" height="40px" width="40px"></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <label class="label label-danger">Angular</label>
+                                            </td>
+                                            <td>46</td>
+                                            <td>
+                                                <h5 class="m-b-0"><p class="stars">
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                </p></h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><img src="assets/img/h1.jpg" height="40px" width="40px"></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>Venessa Fern</td>
+                                            <td>
+                                                <label class="label label-info">Vue Js</label>
+                                            </td>
+                                            <td>46</td>
+                                            <td>
+                                                <h5 class="m-b-0"><p class="stars">
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                </p></h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><img src="assets/img/h.png" height="40px" width="40px"></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Huawei</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <label class="label label-success">Bootstrap</label>
+                                            </td>
+                                            <td>46</td>
+                                            <td>
+                                                <h5 class="m-b-0"><p class="stars">
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                </p></h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="m-r-10"><img src="assets/img/m.jpg" height="40px" width="40px"></div>
+                                                    <div class="">
+                                                        <h4 class="m-b-0 font-16">Samsung M51</h4>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Single Use</td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <label class="label label-purple">React</label>
+                                            </td>
+                                            <td>46</td>
+                                            <td>
+                                                <h5 class="m-b-0"><p class="stars">
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                  <i class="bx bxs-star "></i>
+                </p></h5>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+			
+			
+			
+        
+			
+			<!-- Footer-->
+			
+			 <footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-left">
+							<p class="mb-0">
+								<a href="index.html" class="text-muted"><strong>Product nest DashBoard </strong></a> &copy
+							</p>
+						</div>
+						<div class="col-6 text-right">
+							<ul class="list-inline">
+								<li class="footer-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="footer-item">
+									<a class="text-muted" href="#">Help Center</a>
+								</li>
+								<li class="footer-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="footer-item">
+									<a class="text-muted" href="#">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+			</footer>
+
+       
+    
+  
+
+    <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
